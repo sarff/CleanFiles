@@ -1,4 +1,4 @@
-package app
+package processes
 
 import (
 	"github.com/mitchellh/go-ps"
