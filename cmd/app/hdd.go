@@ -20,7 +20,7 @@ import (
 
 func createNullFile(log logrus.FieldLogger, path, name string) {
 	cmd := fmt.Sprintf("%s\\%s.txt", path, name)
-	cmdprepare := exec.Command("fsutil", "file", "createnew", cmd, "1000000000")
+	cmdprepare := exec.Command("fsutil", "file", "createnew", cmd, "1234567890")
 	errcmd := cmdprepare.Run()
 	if errcmd != nil {
 		log.Println(errcmd)
